@@ -11,14 +11,23 @@ public abstract class Account implements java.io.Serializable {
     protected String name;
     private State state;
 
-    protected Account(String n) {
-        name = n;
+    /**
+     * Account(String newName) creates a new Account using a new name
+     * @param newName
+     * @return Account with state Open
+     */
+    protected Account(String newName) {
+        name = newName;
         state = State.OPEN;
     }
-
-    protected Account(String n, float b) {
-        this(n); 
-        balance = b;
+    /**
+     * Account(String newName, float newBalance) creates a new Account
+     * @param newName
+     * @param newBalance
+     */
+    protected Account(String newName, float newBalance) {
+        this(newName); 
+        balance = newBalance;
     }
 
     /**
