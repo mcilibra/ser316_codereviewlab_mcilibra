@@ -26,6 +26,9 @@ class MainFrame extends JFrame {
 	JButton			newAccountButton;
 	JButton			displayAccountsButton;
 	JButton			displayODAccountsButton;
+	
+	//	Added saveButton to declaration
+	JButton saveButton;
 
 	public MainFrame(String propertyFile) throws IOException {
 
@@ -61,7 +64,7 @@ class MainFrame extends JFrame {
 		newAccountButton = new JButton("New Account");
 		JButton depositButton = new JButton("Deposit");
 		JButton withdrawButton = new JButton("Withdraw");
-		JButton saveButton = new JButton("Save Accounts");
+		saveButton = new JButton("Save Accounts");
 		displayAccountsButton = new JButton("List Accounts");
 		JButton displayAllAccountsButton = new JButton("All Accounts");
 
